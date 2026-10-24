@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso: #3B2418;
+  --color-espresso-deep: #28170F;
+  --color-ivory: #F8F3EA;
+  --color-ivory-warm: #EFE3D2;
+  --color-champagne: #D8BD96;
+  --color-beige-soft: #C6AD8D;
+  --color-text-brown: #2B211B;
+
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-heading: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-cinzel: 'Cinzel', Georgia, serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8F3EA;
+  color: #2B211B;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6B77A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6F5142;
+}
+
+.luxury-gradient-dark {
+  background: linear-gradient(135deg, #2B211B 0%, #1D1510 50%, #3D2F27 100%);
+}
+
+.luxury-gradient-gold {
+  background: linear-gradient(135deg, #D6B77A 0%, #E9D7AE 50%, #B99852 100%);
+}
+
+.luxury-border-glow {
+  box-shadow: 0 0 15px rgba(214, 183, 122, 0.25);
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 12px 30px -10px rgba(43, 33, 27, 0.08);
+}
